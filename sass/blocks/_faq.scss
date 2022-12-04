@@ -1,0 +1,105 @@
+.faq {
+    margin-top: 200px;
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 110%;
+        text-align: center;
+        letter-spacing: -0.005em;
+        color: #051534;
+    }
+    &__block {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        .question {
+            display: inline-block;
+            background: #0F8FF9;
+            border-radius: 0px 12px 12px 12px;
+            padding: 10px 20px;
+            margin-right: auto;
+            margin-top: 10px;
+            cursor: pointer;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #FFFFFF;
+            &:hover {
+                background: #0072EC;
+            }
+        }
+        .question.select {
+            background: #0072EC;
+        }
+        .answer {
+            display: none;
+            max-width: 946px;
+            margin-left: auto;
+            transition: 0.3s;
+            &__text {
+                margin-right: 15px;
+                max-width: 881px;
+                p {
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    background: #F9F9F9;
+                    border-radius: 12px 0px 12px 12px;
+
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #051534;
+                }
+            }
+            &__img {
+                margin-top: 20px;
+            }
+            &_lock {
+                display: flex;
+                justify-content: end;
+            }
+            a {
+                color: #0F8FF9;
+                text-decoration: none;
+            }
+        }
+        .answer.action {
+            display: flex;
+            opacity: 0;
+            opacity: 1;
+            animation: action 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @keyframes action {
+                0% {
+                  transform: translateX(1000px);
+                  opacity: 0;
+                }
+                100% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+            }
+        }
+    }
+    @media (min-width: 576px) and (max-width: 991px) {
+        margin-top: 12px;
+        &__title {
+            font-size: 45px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 575px) {
+        margin-top: 100px;
+        &__title {
+            font-size: 30px;
+        }
+        &__block {
+            margin-top: 40px;
+            .question, .answer {
+                font-size: 18px;
+            }
+        }
+    }
+}
