@@ -329,29 +329,108 @@ body.block {
         font-weight: 400;
         font-size: 18px;
         line-height: 100%;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        transition: 0.3s; }
         .tariff__cards .card__btn_first {
           background: #F0568E; }
+          .tariff__cards .card__btn_first:hover {
+            background: #ef3e7e; }
         .tariff__cards .card__btn_business {
           background: #00C064; }
+          .tariff__cards .card__btn_business:hover {
+            background: #00c04d; }
         .tariff__cards .card__btn_comfort {
           background: #0F8FF9; }
+          .tariff__cards .card__btn_comfort:hover {
+            background: #007be0; }
         .tariff__cards .card__btn_economy {
           background: #FFFFFF;
           border: 1px solid rgba(5, 21, 52, 0.3);
           color: #051534; }
+          .tariff__cards .card__btn_economy:hover {
+            background: #f5f5f5; }
   @media (min-width: 882px) and (max-width: 1199px) {
     .tariff .tariff__cards .card_economy {
       margin: 0 auto;
       margin-top: 20px; } }
-  @media (min-width: 576px) and (max-width: 881px) {
+  @media (min-width: 609px) and (max-width: 881px) {
     .tariff .tariff__cards .card {
       width: 344px; } }
-  @media (min-width: 320px) and (max-width: 575px) {
+  @media (min-width: 320px) and (max-width: 608px) {
     .tariff .tariff__cards {
       flex-direction: column; }
       .tariff .tariff__cards .card {
         margin: 0 auto;
         margin-top: 20px; } }
+
+.demo {
+  margin-top: 200px; }
+  .demo__wrapper {
+    margin: 0 auto;
+    max-width: 946px;
+    display: flex;
+    justify-content: space-between; }
+  .demo__img {
+    margin-right: 40px; }
+  .demo__text {
+    margin-top: 18px; }
+    .demo__text .text-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 110%;
+      letter-spacing: -0.005em;
+      color: #051534; }
+    .demo__text .text-descr {
+      margin-top: 15px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: #051534; }
+    .demo__text .text-btn {
+      display: block;
+      max-width: 213px;
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: 1px solid rgba(5, 21, 52, 0.3);
+      border-radius: 4px;
+      text-decoration: none;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      color: #051534; }
+      .demo__text .text-btn:hover {
+        background: #f5f5f5; }
+  @media (min-width: 576px) and (max-width: 991px) {
+    .demo {
+      margin-top: 100px; }
+      .demo__wrapper {
+        flex-direction: column; }
+      .demo__img {
+        margin: 0 auto; }
+      .demo__text {
+        margin-top: 37px; }
+        .demo__text .text-title, .demo__text .text-descr {
+          text-align: center; }
+        .demo__text .text-btn {
+          margin: 0 auto;
+          margin-top: 20px; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .demo {
+      margin-top: 85px; }
+      .demo__wrapper {
+        flex-direction: column; }
+      .demo__img {
+        margin: 0 auto; }
+      .demo__text {
+        margin-top: 20px; }
+        .demo__text .text-title, .demo__text .text-descr {
+          text-align: center; }
+        .demo__text .text-btn {
+          margin: 0 auto;
+          margin-top: 29px; } }
 
 /*# sourceMappingURL=style.css.map */
