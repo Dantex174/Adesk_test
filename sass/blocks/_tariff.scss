@@ -1,0 +1,195 @@
+.tariff {
+    margin-top: 80px;
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card {
+            max-width: 224px;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+            &_first {
+                background: #FFF0F7;
+            }
+            &_business {
+                background: #EAFFEE;
+            }
+            &_comfort {
+                background: #F0FCFF;
+            }
+            &_economy {
+                background: #F9F9F9;
+            }
+            &__title {
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                color: #051534;
+            }
+            &__descr {
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #051534;
+            }
+            &__price {
+                margin-top: 30px;
+                .price-sum {
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 40px;
+                    line-height: 100%;
+                    color: #051534;
+                }
+                .price-descr {
+                    margin-top: 5px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 120%;
+                    color: rgba(5, 21, 52, 0.5);
+                }
+            }
+            &__users {
+                margin-top: 30px;
+                .users-people, .users-company {
+                    position: relative;
+                    margin-left: 21px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 120%;
+                    color: #051534;
+                }
+                .users-company {
+                    margin-top: 8px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: -21px;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url(../icons/Company.svg);
+                    }
+                }
+                .users-people {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: -21px;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url(../icons/man.svg);
+                    }
+                }
+            }
+            &__functionals {
+                margin-top: 15px;
+                .functional_plus, .functional_minus {
+                    position: relative;
+                    margin-left: 21px;
+                    margin-bottom: 8px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 120%;
+                }
+                .functional_plus {
+                    color: #051534;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: -21px;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url(../icons/Check.png);
+                    }
+                }
+                .functional_minus {
+                    color: rgba(5, 21, 52, 0.25);
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -21px;
+                        width: 11px;
+                        height: 1.5px;
+                        background: rgba(44, 48, 56, 0.25);
+                        
+                    }
+                }
+            }
+            &__btn {
+                display: block;
+                margin-top: 49px;
+                padding: 12px 20px;
+                border-radius: 4px;
+                text-align: center;
+
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 100%;
+                color: #FFFFFF;
+                &_first {
+                    background: #F0568E;
+                }
+                &_business {
+                    background: #00C064;
+                }
+                &_comfort {
+                    background: #0F8FF9;
+                }
+                &_economy {
+                    background: #FFFFFF;
+                    border: 1px solid rgba(5, 21, 52, 0.3);
+                    color: #051534;
+                }
+            }
+        }
+    }
+
+    //Медиазапросы
+    @media (min-width: 882px) and (max-width: 1199px) {
+        .tariff {
+            &__cards {
+                .card {
+                    &_economy {
+                        margin: 0 auto;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 576px) and (max-width: 881px) {
+        .tariff {
+            &__cards {
+                .card {
+                    width: 344px;
+                }
+            }
+        }
+    }
+    @media (min-width: 320px) and (max-width: 575px) {
+        .tariff {
+            &__cards {
+                flex-direction: column;
+                .card {
+                    margin: 0 auto;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
