@@ -433,4 +433,98 @@ body.block {
           margin: 0 auto;
           margin-top: 29px; } }
 
+.consulting {
+  margin-top: 200px; }
+  .consulting__wrapper {
+    background: #F9F9F9;
+    border-radius: 16px;
+    padding: 120px 0; }
+  .consulting__title {
+    max-width: 755px;
+    margin: 0 auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #051534; }
+  .consulting__list {
+    max-width: 558px;
+    margin: 0 auto; }
+    .consulting__list .string {
+      position: relative;
+      margin-top: 50px;
+      margin-left: 79px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+      color: #051534; }
+      .consulting__list .string::before {
+        content: "";
+        top: 0;
+        left: -79px;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: #EAEAEA;
+        border-radius: 100%;
+        filter: blur(7.5px); }
+      .consulting__list .string::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -79px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 130%;
+        text-align: center;
+        color: #555A64; }
+    .consulting__list .string_first::after {
+      content: "1"; }
+    .consulting__list .string_second::after {
+      content: "2"; }
+    .consulting__list .string_third::after {
+      content: "3"; }
+  .consulting__btn {
+    display: block;
+    max-width: 334px;
+    padding: 18px 0;
+    background: #051534;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF; }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .consulting {
+      margin-top: 120px; }
+      .consulting__wrapper {
+        padding: 100px 50px; }
+      .consulting__title {
+        font-size: 45px; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .consulting {
+      margin-top: 100px; }
+      .consulting__wrapper {
+        padding: 60px 20px; }
+      .consulting__title {
+        font-size: 30px; }
+      .consulting__list .string {
+        font-size: 18px; }
+      .consulting__btn {
+        font-size: 18px; } }
+
 /*# sourceMappingURL=style.css.map */
