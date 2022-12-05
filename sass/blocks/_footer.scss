@@ -157,7 +157,9 @@
     }
 
     // Медиазапросы
-
+    @media (min-width:1200px) and (max-width: 1330px) {
+        padding: 80px 100px;
+    }
     @media (min-width:992px) and (max-width: 1199px) {
         padding: 80px 0 0;
     }
@@ -177,6 +179,11 @@
         }
         &__bottom {
             .links{
+                display: flex;
+                justify-content: space-between;
+                #white {
+                    color: #FFFFFF;
+                }
                 .link-md {
                     display: flex;
                 }
@@ -216,6 +223,9 @@
                 margin-top: 40px;
                 display: flex;
                 flex-direction: column;
+                #white {
+                    color: #FFFFFF;
+                }
                 a {
                     margin-top: 10px;
                 }
