@@ -1,5 +1,5 @@
 * {
-  font-family: 'Graphik', sans-serif; }
+  font-family: 'Graphik LCG', sans-serif; }
   * h1, * h2, * p {
     margin: 0; }
 
@@ -742,7 +742,8 @@ body.block {
       padding: 80px 0 0; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .footer {
-      padding: 0; }
+      padding: 0;
+      margin-top: 200px; }
       .footer__columns .column {
         margin-top: 161px; }
         .footer__columns .column__logo {
@@ -758,7 +759,8 @@ body.block {
         right: 30px; } }
   @media (min-width: 320px) and (max-width: 767px) {
     .footer {
-      padding: 0; }
+      padding: 0;
+      margin-top: 100px; }
       .footer__columns {
         flex-direction: column; }
         .footer__columns .column {
