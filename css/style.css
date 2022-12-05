@@ -102,14 +102,14 @@ body.block {
       margin-left: 20px; }
       .header .header__menu .menu__item {
         font-size: 16px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     .header .header__menu {
       margin-left: 20px; }
       .header .header__menu .menu__item {
         font-size: 14px;
         line-height: 85%;
         margin-right: 8px; } }
-  @media (min-width: 576px) and (max-width: 767px) {
+  @media (min-width: 576px) and (max-width: 768px) {
     .header .header__menu {
       display: none; } }
   @media (min-width: 320px) and (max-width: 576px) {
@@ -775,7 +775,7 @@ body.block {
           position: absolute;
           top: 60px;
           right: 30px; } }
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     .footer {
       padding: 0;
       margin-top: 100px; }
