@@ -163,6 +163,7 @@
     }
     @media (min-width: 768px) and (max-width: 991px) {
         padding: 0;
+        margin-top: 200px;
         &__columns {
             .column {
                 margin-top: 161px;
@@ -189,6 +190,7 @@
     }
     @media (min-width: 320px) and (max-width: 767px) {
         padding: 0;
+        margin-top: 100px;
         &__columns {
             flex-direction: column;
             .column {
