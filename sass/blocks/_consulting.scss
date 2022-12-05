@@ -84,7 +84,15 @@
         text-align: center;
         text-decoration: none;
         color: #FFFFFF;
+        transition: 0.3s;
+        &:hover {
+            background-color: #555A64;;
+            color: #051534;
+        }
     }
+
+    // Медиазапросы
+
     @media (min-width: 576px) and (max-width: 767px) {
         margin-top: 120px;
         &__wrapper {

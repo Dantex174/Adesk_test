@@ -401,7 +401,8 @@ body.block {
       font-weight: 400;
       font-size: 18px;
       line-height: 100%;
-      color: #051534; }
+      color: #051534;
+      transition: 0.3s; }
       .demo__text .text-btn:hover {
         background: #f5f5f5; }
   @media (min-width: 576px) and (max-width: 991px) {
@@ -507,7 +508,11 @@ body.block {
     line-height: 100%;
     text-align: center;
     text-decoration: none;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    transition: 0.3s; }
+    .consulting__btn:hover {
+      background-color: #555A64;
+      color: #051534; }
   @media (min-width: 576px) and (max-width: 767px) {
     .consulting {
       margin-top: 120px; }
@@ -610,5 +615,172 @@ body.block {
         margin-top: 40px; }
         .faq__block .question, .faq__block .answer {
           font-size: 18px; } }
+
+.footer {
+  margin-top: 182px;
+  padding: 80px 170px 0;
+  background: #051534;
+  position: relative; }
+  .footer__columns {
+    display: flex;
+    justify-content: space-between; }
+    .footer__columns .column {
+      width: 267px; }
+      .footer__columns .column__logo {
+        display: flex; }
+        .footer__columns .column__logo img {
+          margin-right: 15px;
+          margin-top: 4px;
+          width: 44px;
+          height: 44px; }
+        .footer__columns .column__logo_text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 120%;
+          color: #FFFFFF; }
+          .footer__columns .column__logo_text span {
+            font-family: 'Hauora';
+            font-style: normal;
+            font-weight: 700; }
+      .footer__columns .column__busines-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF; }
+      .footer__columns .column__service-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF; }
+      .footer__columns .column__info-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF; }
+      .footer__columns .column__list {
+        padding-left: 0;
+        list-style-type: none; }
+        .footer__columns .column__list .list-item {
+          margin-top: 15px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 120%; }
+          .footer__columns .column__list .list-item a {
+            text-decoration: none;
+            color: #8394B5; }
+          .footer__columns .column__list .list-item__mail, .footer__columns .column__list .list-item__phone {
+            display: block;
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none; }
+          .footer__columns .column__list .list-item__phone {
+            color: #FFFFFF; }
+      .footer__columns .column__line {
+        margin-top: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 0; }
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__links .pay-metods {
+      display: flex;
+      align-items: center; }
+      .footer__links .pay-metods a {
+        margin-right: 20px; }
+    .footer__links .app {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px; }
+      .footer__links .app a {
+        display: flex;
+        padding: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        margin-left: 10px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-decoration: none;
+        color: #FFFFFF; }
+        .footer__links .app a img {
+          margin-right: 8px; }
+  .footer__line {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 0; }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0; }
+    .footer__bottom .links a {
+      margin-right: 20px;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: rgba(255, 255, 255, 0.5); }
+    .footer__bottom .links .link-md {
+      display: none; }
+    .footer__bottom .social-links {
+      display: flex;
+      align-items: center; }
+      .footer__bottom .social-links a {
+        margin-left: 30px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .footer {
+      padding: 80px 0 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .footer {
+      padding: 0; }
+      .footer__columns .column {
+        margin-top: 161px; }
+        .footer__columns .column__logo {
+          position: absolute;
+          margin: 0;
+          top: 60px;
+          left: 30px; }
+      .footer__bottom .links .link-md {
+        display: flex; }
+      .footer__bottom .social-links {
+        position: absolute;
+        top: 60px;
+        right: 30px; } }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .footer {
+      padding: 0; }
+      .footer__columns {
+        flex-direction: column; }
+        .footer__columns .column {
+          margin-top: 50px; }
+      .footer__line {
+        display: none; }
+      .footer__links {
+        display: none; }
+      .footer__bottom {
+        flex-direction: column-reverse; }
+        .footer__bottom .social-links {
+          margin-top: 50px; }
+          .footer__bottom .social-links a {
+            margin-left: 0;
+            margin-right: 30px; }
+        .footer__bottom .links {
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column; }
+          .footer__bottom .links a {
+            margin-top: 10px; }
+          .footer__bottom .links .link-md {
+            display: flex; } }
 
 /*# sourceMappingURL=style.css.map */
