@@ -159,6 +159,7 @@
     // Медиазапросы
     @media (min-width:992px) and (max-width: 1199px) {
         &__columns {
+            margin-right: 24px;
             .column {
                 margin-right: 24px;
             }

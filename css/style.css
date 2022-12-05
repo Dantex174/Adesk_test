@@ -741,8 +741,10 @@ body.block {
       .footer__bottom .social-links a {
         margin-left: 30px; }
   @media (min-width: 992px) and (max-width: 1199px) {
-    .footer__columns .column {
-      margin-right: 24px; } }
+    .footer__columns {
+      margin-right: 24px; }
+      .footer__columns .column {
+        margin-right: 24px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .footer {
       padding: 0;
