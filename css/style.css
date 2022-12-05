@@ -745,7 +745,7 @@ body.block {
       margin-right: 24px; }
       .footer__columns .column {
         margin-right: 24px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 767px) and (max-width: 991px) {
     .footer {
       padding: 0;
       margin-top: 200px; }
@@ -775,7 +775,7 @@ body.block {
           position: absolute;
           top: 60px;
           right: 30px; } }
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     .footer {
       padding: 0;
       margin-top: 100px; }
