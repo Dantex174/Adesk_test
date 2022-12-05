@@ -18,6 +18,9 @@ body.block {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 30px;
+    @media (max-width: 768px) {
+        padding: 0 15px;
+    }
 }
 
 @import 'blocks/header';

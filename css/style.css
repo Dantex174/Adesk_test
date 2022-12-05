@@ -16,6 +16,9 @@ body.block {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 30px; }
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px; } }
 
 .header {
   max-height: 80px; }
@@ -618,7 +621,7 @@ body.block {
 
 .footer {
   margin-top: 182px;
-  padding: 80px 170px 0;
+  padding: 80px 0 0;
   background: #051534;
   position: relative; }
   .footer__columns {
@@ -737,12 +740,9 @@ body.block {
       align-items: center; }
       .footer__bottom .social-links a {
         margin-left: 30px; }
-  @media (min-width: 1200px) and (max-width: 1330px) {
-    .footer {
-      padding: 80px 100px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
-    .footer {
-      padding: 80px 0 0; } }
+    .footer__columns .column {
+      margin-right: 24px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .footer {
       padding: 0;
@@ -754,17 +754,25 @@ body.block {
           margin: 0;
           top: 60px;
           left: 30px; }
-      .footer__bottom .links {
-        display: flex;
-        justify-content: space-between; }
-        .footer__bottom .links #white {
-          color: #FFFFFF; }
-        .footer__bottom .links .link-md {
-          display: flex; }
-      .footer__bottom .social-links {
-        position: absolute;
-        top: 60px;
-        right: 30px; } }
+        .footer__columns .column__busines, .footer__columns .column__service, .footer__columns .column__info {
+          width: 223px; }
+      .footer__links {
+        display: none; }
+      .footer__line {
+        display: none; }
+      .footer__bottom {
+        margin-top: 70px; }
+        .footer__bottom .links {
+          display: flex;
+          justify-content: space-between; }
+          .footer__bottom .links #white {
+            color: #FFFFFF; }
+          .footer__bottom .links .link-md {
+            display: flex; }
+        .footer__bottom .social-links {
+          position: absolute;
+          top: 60px;
+          right: 30px; } }
   @media (min-width: 320px) and (max-width: 767px) {
     .footer {
       padding: 0;
@@ -780,7 +788,7 @@ body.block {
       .footer__bottom {
         flex-direction: column-reverse; }
         .footer__bottom .social-links {
-          margin-top: 50px; }
+          margin-top: 40px; }
           .footer__bottom .social-links a {
             margin-left: 0;
             margin-right: 30px; }
